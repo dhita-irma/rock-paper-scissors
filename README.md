@@ -6,7 +6,3 @@ To play the game, simply clone this repository and open the index.html file in y
 
 ## Gameplay
 The game begins by prompting the player to choose their move for the first round. The player can type in 'rock', 'paper', or 'scissors' (without quotes) to make their selection. Once the player has made their selection, the computer will randomly select its move and the winner of the round will be displayed on the console panel. The game will keep score of the player and computer throughout the game. After the end of the fifth round, the game will declare the winner based on the final score.
-
-## Built With
-JavaScript
-HTML
