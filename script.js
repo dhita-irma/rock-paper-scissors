@@ -7,10 +7,7 @@ function getComputerChoice() {
 
 // Play single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-
   // Compare playerSelection vs computerSelection
-  console.log(`You: ${playerSelection} vs Computer: ${computerSelection}`);
-
   if (playerSelection === computerSelection) {
     return "TIE";
   } else {
@@ -46,28 +43,31 @@ function game() {
     computerSelection = getComputerChoice();
 
     // Play a round
-    console.log(`Round ${i + 1}`);
-    console.log(playRound(playerSelection, computerSelection));
+    console.log(`ROUND ${i + 1}`);
+    console.log(`You: ${playerSelection} vs Computer: ${computerSelection}`);
+    result = playRound(playerSelection, computerSelection);
 
     // Calculate score
-    result = playRound(playerSelection, computerSelection);
     if (result === "WON") {
       playerScore++;
+      console.log("You Won!");
     } else if (result === "LOSE") {
       computerScore++;
+      console.log("You Lose!");
     } else if (result === "TIE") {
-        playerScore++;
-        computerScore++;
+      playerScore++;
+      computerScore++;
+      console.log("It's a tie!");
     }
 
-    // Reset selections
+    // Reset selections and result
     playerSelection = "";
     computerSelection = "";
     result = "";
   }
 
   // Declare the winner
-  console.log(`Player score: ${playerScore} Computer score: ${computerScore}`);
+  console.log(`Your score: ${playerScore} Computer's score: ${computerScore}`);
   if (playerScore > computerScore) {
     console.log("Congratulations! You won this game.");
   } else {
