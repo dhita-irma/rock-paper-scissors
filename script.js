@@ -7,7 +7,6 @@ function getComputerChoice() {
 
 // Play single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-  // Compare playerSelection vs computerSelection
   if (playerSelection === computerSelection) {
     return "TIE";
   } else {
@@ -34,7 +33,7 @@ function game() {
   let computerScore = 0;
 
   for (let i = 0; i < 5; i++) {
-    // Prompt player for selection
+    // Prompt player for selection, use while loop for typo handling
     while (!hands.includes(playerSelection)) {
       playerSelection = prompt("Type 'Rock', 'Paper', or 'Scissors':").toUpperCase();
     }
