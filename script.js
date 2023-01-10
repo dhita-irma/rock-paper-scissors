@@ -36,7 +36,7 @@ function game() {
   for (let i = 0; i < 5; i++) {
     // Prompt player for selection
     while (!hands.includes(playerSelection)) {
-      playerSelection = prompt().toUpperCase();
+      playerSelection = prompt("Type 'Rock', 'Paper', or 'Scissors':").toUpperCase();
     }
 
     // Get computer selection
