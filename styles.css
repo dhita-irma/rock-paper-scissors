@@ -1,0 +1,39 @@
+body {
+  background-color: #222831;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #121212;
+}
+
+.game-round {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.btn {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  border-radius: 7px;
+  color: white;
+  background-color: #121212;
+  border: none;
+}
+
+.footer {
+  background-color: #121212;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
