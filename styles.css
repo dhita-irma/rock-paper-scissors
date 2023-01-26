@@ -20,6 +20,10 @@ body {
   gap: 100px;
 }
 
+.player-weapon, .computer-weapon {
+  font-size: 70px;
+}
+
 .btn {
   height: 100px;
   width: 100px;
