@@ -25,9 +25,10 @@ body {
   width: 100px;
   margin: 20px;
   border-radius: 7px;
+  font-size: 70px;
   color: white;
-  background-color: #121212;
   border: none;
+  background-color: #121212;
 }
 
 .footer {
