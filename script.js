@@ -8,17 +8,17 @@ function getComputerChoice() {
 // Play single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
-    return "TIE";
+    return ["It's a tie!", "Both player get one point."];
   } else {
     switch (`${playerSelection} vs ${computerSelection}`) {
       case "ROCK vs SCISSORS":
       case "PAPER vs ROCK":
       case "SCISSORS vs PAPER":
-        return "WON";
+        return ["You Win!", "You get one point."];
       case "ROCK vs PAPER":
       case "PAPER vs SCISSORS":
       case "SCISSORS vs ROCK":
-        return "LOSE";
+        return ["You Lose!", "Computer gets one point."];
     }
   }
 }
@@ -39,6 +39,8 @@ function convertIcon(weapon) {
 const weaponsBtn = document.querySelectorAll('.btn');
 const playerWeapon = document.getElementById('player-weapon');
 const computerWeapon = document.getElementById('computer-weapon');
+const result = document.getElementById('result');
+const explanation = document.getElementById('explanation')
 
 weaponsBtn.forEach((button) => {
   button.addEventListener('click', () => {
@@ -47,9 +49,9 @@ weaponsBtn.forEach((button) => {
 
     playerWeapon.textContent = button.textContent;
     computerWeapon.textContent = convertIcon(computerSelection);
-    
+
     const roundResult = playRound(playerSelection, computerSelection);
-    console.log(`${playerSelection} vs ${computerSelection}`);
-    console.log(roundResult);
+    result.textContent = roundResult[0];
+    explanation.textContent = roundResult[1];
   })
 });
