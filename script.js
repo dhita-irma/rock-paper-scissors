@@ -23,3 +23,15 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+// GAME PLAY
+const weaponsBtn = document.querySelectorAll('.btn');
+
+weaponsBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const playerSelection = button.id;
+    const computerSelection = getComputerChoice()
+    const roundResult = playRound(playerSelection, computerSelection);
+    console.log(`${playerSelection} vs ${computerSelection}`);
+    console.log(roundResult);
+  })
+});
