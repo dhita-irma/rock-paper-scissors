@@ -23,13 +23,31 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+// Turn text to icon 
+function convertIcon(weapon) {
+  switch (weapon) {
+    case "ROCK":
+      return "✊";
+    case "PAPER":
+      return "✋";
+    case "SCISSORS":
+      return "✌️";
+  }
+}
+
 // GAME PLAY
 const weaponsBtn = document.querySelectorAll('.btn');
+const playerWeapon = document.getElementById('player-weapon');
+const computerWeapon = document.getElementById('computer-weapon');
 
 weaponsBtn.forEach((button) => {
   button.addEventListener('click', () => {
     const playerSelection = button.id;
     const computerSelection = getComputerChoice()
+
+    playerWeapon.textContent = button.textContent;
+    computerWeapon.textContent = convertIcon(computerSelection);
+    
     const roundResult = playRound(playerSelection, computerSelection);
     console.log(`${playerSelection} vs ${computerSelection}`);
     console.log(roundResult);

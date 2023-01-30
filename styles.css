@@ -20,7 +20,7 @@ body {
   gap: 100px;
 }
 
-.player-weapon, .computer-weapon {
+#player-weapon, #computer-weapon {
   font-size: 70px;
 }
 
