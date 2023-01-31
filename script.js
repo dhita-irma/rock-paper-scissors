@@ -78,11 +78,29 @@ weaponsBtn.forEach((button) => {
       result.textContent = "5 Points Reached";
       document.getElementById("weapons-container").style.display = "none";
       document.getElementById("replay").style.display = "block";
+      playerScoreNum = 0;
+      computerScoreNum = 0;
       if (playerScoreNum == 5) {
         explanation.textContent = "CONGRATULATIONS, YOUT WIN!";
       } else {
         explanation.textContent = "SORRY, YOU LOSE!";
-      }
+      } 
+      // to-do: handle tie 
     }
   })
 });
+
+
+// Restart Game 
+const replayBtn = document.getElementById("replay");
+
+replayBtn.addEventListener('click', () => {
+  document.getElementById("weapons-container").style.display = "block";
+  document.getElementById("replay").style.display = "none";
+
+  result.textContent = "Choose Your Weapon";
+  explanation.textContent = "First to score 5 points wins the game";
+
+  playerScore.textContent = "You: 0";
+  computerScore.textContent = "Computer: 0";
+})
