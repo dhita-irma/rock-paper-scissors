@@ -36,7 +36,7 @@ function convertIcon(weapon) {
 }
 
 // GAME PLAY
-const weaponsBtn = document.querySelectorAll('.btn');
+const weaponsBtn = document.querySelectorAll('.weapon');
 const playerWeapon = document.getElementById('player-weapon');
 const computerWeapon = document.getElementById('computer-weapon');
 const playerScore = document.getElementById('player-score');
@@ -76,6 +76,8 @@ weaponsBtn.forEach((button) => {
       computerScore.textContent = `Computer: ${computerScoreNum.toString()}`;
     } else {
       result.textContent = "5 Points Reached";
+      document.getElementById("weapons-container").style.display = "none";
+      document.getElementById("replay").style.display = "block";
       if (playerScoreNum == 5) {
         explanation.textContent = "CONGRATULATIONS, YOUT WIN!";
       } else {

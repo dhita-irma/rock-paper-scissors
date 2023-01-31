@@ -35,6 +35,20 @@ body {
   background-color: #121212;
 }
 
+.replay-container > .btn {
+  display: none;
+  height: 75px;
+  width: 150px;
+  font-size: 20px;
+}
+
+.replay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .footer {
   background-color: #121212;
   height: 50px;
