@@ -8,7 +8,7 @@ function getComputerChoice() {
 // Play single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
-    return ["TIE", "It's a tie!", "Both player get one point."];
+    return ["TIE", "It's a tie!", "Both players get one point."];
   } else {
     switch (`${playerSelection} vs ${computerSelection}`) {
       case "ROCK vs SCISSORS":
@@ -71,7 +71,7 @@ weaponsBtn.forEach((button) => {
     }
 
     // Display Score 
-    playerScore.textContent = `Player: ${playerScoreNum.toString()}`;
+    playerScore.textContent = `You: ${playerScoreNum.toString()}`;
     computerScore.textContent = `Computer: ${computerScoreNum.toString()}`;
   })
 });
