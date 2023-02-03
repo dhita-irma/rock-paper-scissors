@@ -12,6 +12,12 @@ body {
 
 .header {
   background-color: #121212;
+  font-family: 'Bungee Spice', cursive;
+  font-size: 25px;
+}
+
+.header > h1 {
+  margin: 20px 0 20px 0;
 }
 
 .game-round {
