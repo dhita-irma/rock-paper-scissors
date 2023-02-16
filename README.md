@@ -2,7 +2,7 @@
 This repository contains a simple implementation of the classic game of rock-paper-scissors, written in JavaScript as a part of  The Odin Project curricculum to practice basic JavaScript. 
 
 ## Getting Started
-To play the game, simply clone this repository and open the index.html file in your browser. The game will automatically load and you can begin playing immediately.
+To play the game, clone this repository and open the index.html file in your browser or simply visit this [link](https://dhita-irma.github.io/rock-paper-scissors/). The game will automatically load and you can begin playing immediately.
 
 ## Gameplay
 1. Click on the "Rock", "Paper", or "Scissors" button to choose your weapon.
