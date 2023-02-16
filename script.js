@@ -75,14 +75,13 @@ weaponsBtn.forEach((button) => {
       result.textContent = "5 Points Reached";
       document.getElementById("weapons-container").style.display = "none";
       document.getElementById("replay").style.display = "block";
-      playerScoreNum = 0;
-      computerScoreNum = 0;
       if (playerScoreNum == 5) {
         explanation.textContent = "CONGRATULATIONS, YOUT WIN!";
       } else {
         explanation.textContent = "SORRY, YOU LOSE!";
       } 
-      // to-do: handle tie 
+      playerScoreNum = 0;
+      computerScoreNum = 0;
     }
   })
 });
