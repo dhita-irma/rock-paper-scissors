@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Mochiy+Pop+One&display=swap");
 
 body {
   background-color: #222831;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   margin: 0;
   height: 100vh;
@@ -14,7 +14,7 @@ body {
 
 .header {
   background-color: #121212;
-  font-family: 'Bungee Spice', cursive;
+  font-family: "Bungee Spice", cursive;
   font-size: 25px;
 }
 
@@ -22,13 +22,19 @@ body {
   margin: 20px 0 20px 0;
 }
 
+.information {
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
 .game-round {
+  font-family: 'Mochiy Pop One', sans-serif;
   display: flex;
   justify-content: center;
   gap: 100px;
 }
 
-#player-weapon, #computer-weapon {
+#player-weapon,
+#computer-weapon {
   font-size: 70px;
 }
 
@@ -55,7 +61,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .footer {
   background-color: #121212;
